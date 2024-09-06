@@ -1,0 +1,192 @@
+body {
+	font-family: 'Product Sans', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+h1 {
+	text-align: center;
+	color: rgb(66, 64, 219) !important;
+}
+.page {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+i{
+	color: black;
+}
+nav {
+	border-bottom: 1px solid rgb(189, 189, 189);
+    padding: 1rem 5%;
+    font-size: 2rem;
+	.container{
+		display: grid;
+        place-items: center;
+		grid-template-columns: 12rem auto 20rem; 
+
+		& > .logo {
+            width: 100%;
+            font-size: 1em;
+			margin-right: auto;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		}
+
+		& > .groups {
+            width: 100%;
+            font-size: .5em;
+			font-weight: bold;
+            text-align: center;
+			margin: auto;
+            & > a {
+                font-size: 1.5em;
+                color: rgb(116, 116, 116);
+                text-decoration: none;
+                margin: 0em 1em;
+                &:hover {
+                  color: rgb(0, 0, 0);
+                  text-decoration: underline;
+                }
+            }
+		}
+
+		& > .actions {
+            width: 100%;
+			margin-right: 1em;
+			display: flex;
+            justify-content: flex-end;
+            place-items: center;
+            & > .search{
+                place-items: center;
+                display: grid;
+                padding: .3em 1em;
+                font-size: .8em;
+                grid-template-columns: 1em auto;
+                background-color: lightgrey; 
+                border-radius: 2em;
+                & > input {
+                    font-size: 1.2rem;
+                    width: 8em;    
+                    margin: 0rem 1rem 0rem 0rem;
+                    padding:.3em 1em;
+                    background: none;
+                    border: none;
+                    &::placeholder{
+                        font-size: 2em;
+                    }
+                }
+            }
+            & > .bag{
+                padding-left: 1em;
+                font-size: 1em;
+            }
+		}
+	}
+}
+
+
+
+
+/* MAIN */
+main{
+    display: grid;
+    grid-template-columns: 20rem auto;
+}
+
+
+/* FILTER */
+.filter{
+    padding: 3rem;
+    & > .breadcrumb{
+        font-weight: 600;
+    }
+    & > .list-name{
+        padding: .5rem 0rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    & > .categories{
+        text-align: left;
+        padding: 0rem;
+        list-style-type: none;
+        & > li{
+            padding-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: grey;
+            &:hover{
+                color: black;
+            }
+        }
+
+    }
+}
+
+
+/* PRODUCTS */
+/* .products{
+    width: 100%;
+	display: grid;
+    margin: auto;
+	grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+} */
+.products{
+    margin-top: 2rem;
+	display: flex;
+    justify-content: center;
+    align-content:  flex-end;
+    flex-wrap: wrap;
+    margin-right: 4rem;
+}
+
+.item{
+    width: 20rem;
+    height: 25rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px lightgray;
+	margin: .5rem;
+    bottom: 0;
+    padding: 1rem;
+	& > img{
+        width: 100%;
+        height: 18rem;
+		object-fit: cover;
+        margin-bottom: 1rem;
+	}
+	& > .highlight{
+		color: rgb(74, 122, 194);
+        font-weight: 500;
+        font-weight: .8rem;
+	}
+	& > .name{
+        font-size: 1.5 rem;
+        font-weight: bold;
+	}
+	& > .colors{
+        font-weight: 500;
+        font-weight: .8rem;   
+        &::after{
+            content: "colors";
+        }     
+	}
+	& > .price{
+        font-weight: bold;
+        font-weight: .8rem;
+        &::before{
+            content: "MRP: ";
+        }
+        &::after{
+            content: "/-";
+        }
+	}
+    &:hover{
+        box-shadow: 0 0 1rem gray;
+    }
+}
+
+
+/* DEBUG */
+.border{
+    border: red solid 1px;
+}
