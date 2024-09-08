@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Title</title>
-    </head>
-    <body>
-        <div class="page">
-            <h1>Title</h1>
-    </body>
-    <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+</head>
+<body>
+	<div class="page">
+		<h1>Battleship</h1>
+		<p id="cards-info">Ships</p>
+		<input type="range" min="1" max="16" class="slider" id="cards"></input>
+		<br>
+		<p id="chances-info">Chance</p>
+		<input type="range" min="1" max="16" class="slider" id="chances"></input>
+		<br>
+		<p id="level"></p>
+		<div class="board">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+		<dialog id="dialog"> <h1 id="message"></h1> <button id="close">[x] close</button> </dialog>
+		<button id="Reset">Reset</button>
+	</div>
+</body>
+<script src="script.js"></script>
 </html>

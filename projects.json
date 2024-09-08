@@ -11,42 +11,47 @@
     },
     {
         "title": "ShoppingPage",
-        "caption": "",
+        "caption": "Sorry, can't buy.",
         "href": "02_ShoppingPage/index.html"
     },
     {
         "title": "LoginForm",
-        "caption": "",
+        "caption": "What a gimmik",
         "href": "03_LoginForm/index.html"
     },
     {
         "title": "PersonalResume",
-        "caption": "",
+        "caption": "And its on someone else's name",
         "href": "04_PersonalResume/index.html"
     },
     {
         "title": "StickyNotes",
-        "caption": "",
+        "caption": "Paste now!",
         "href": "05_StickyNotes/index.html"
     },
     {
         "title": "Battleship",
-        "caption": "",
+        "caption": "Now its about the war.",
         "href": "06_Battleship/index.html"
     },
     {
         "title": "TicTacToe",
-        "caption": "",
+        "caption": "XOX",
         "href": "07_TicTacToe/index.html"
     },
     {
         "title": "Wordle",
-        "caption": "",
+        "caption": "GuessWord",
         "href": "08_Wordle/index.html"
+    },    
+    {
+        "title": "Calculator",
+        "caption": "Do math",
+        "href": "09_Calculator/index.html"
     },
     {
         "title": "CurrencyConverter",
-        "caption": "",
+        "caption": "Yes, this one works!",
         "href": "10_CurrencyConverter/index.html"
     },
     {

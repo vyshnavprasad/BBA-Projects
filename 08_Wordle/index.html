@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Title</title>
-    </head>
-    <body>
-        <div class="page">
-            <h1>Title</h1>
-    </body>
-    <script src="script.js"></script>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORDLE</title>
+</head>
+<body>
+	<div class="page">
+		<h1>WORDLE</h1>
+		<h2 id="max-score"></h2>
+		<br>
+		<div class="guesses">
+			<div id="guess-1" class="guess">
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+			</div>
+			<div id="guess-2" class="guess">
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+			</div>
+			<div id="guess-3" class="guess">
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+			</div>
+			<div id="guess-4" class="guess">
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+			</div>
+			<div id="guess-5" class="guess">
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+			</div>
+			<div id="guess-6" class="guess">
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+				<cell class="letter"></cell>
+			</div>
+		</div>
+		<div align="center">
+			<input id="new-guess" placeholder="Next-Guess">
+			</input>
+			<br>
+			<div id="scope">
+				<button id="guess"> GUESS </button>
+				<h1 id="win"> YOU-WIN!</h1>
+				<h1 id="lose"> YOU-LOSE!</h1>
+			</div>
+			<br>
+			<button id="start"> START </button>
+		</div>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>html?

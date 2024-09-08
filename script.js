@@ -22,15 +22,14 @@ let page = document.querySelector("#page");
 //FUNCTIONS
 function ListBuilder(projects) {
     for(let index in projects){
+        let projectContainer = document.createElement("div");
+        projectContainer.classList.add("project-container");
+
         let project = projects[index];
         let projectElement = document.createElement("a");
         projectElement.href = project.href;
         projectElement.target = "_blank";
         projectElement.classList.add("board");
-
-        let projectContainer = document.createElement("div");
-        projectContainer.href = project.href;
-        projectContainer.classList.add("card");
 
 
         let elementTitle = document.createElement("h1");
@@ -38,10 +37,10 @@ function ListBuilder(projects) {
 
         let elementContent = document.createElement("h3");
         elementContent.textContent = project.caption;
-        projectContainer.append(elementTitle, elementContent);
-        projectElement.appendChild(projectContainer);
-        page.append(projectElement);    
+        projectElement.append(elementTitle, elementContent);
+        page.append(projectContainer.appendChild(projectElement));    
     }
+    console.log(page);
 }
 
 fetch("projects.json")
