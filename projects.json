@@ -1,7 +1,62 @@
-{
+[
+    {
+        "title": "",
+        "caption": "",
+        "href": ""
+    },
     {
         "title": "Chessbord",
-        "caption": "Just a pretty useless dummy." 
+        "caption": "Just a pretty useless dummy.",
+        "href": "01_Chessboard/index.html"
+    },
+    {
+        "title": "ShoppingPage",
+        "caption": "",
+        "href": "02_ShoppingPage/index.html"
+    },
+    {
+        "title": "LoginForm",
+        "caption": "",
+        "href": "03_LoginForm/index.html"
+    },
+    {
+        "title": "PersonalResume",
+        "caption": "",
+        "href": "04_PersonalResume/index.html"
+    },
+    {
+        "title": "StickyNotes",
+        "caption": "",
+        "href": "05_StickyNotes/index.html"
+    },
+    {
+        "title": "Battleship",
+        "caption": "",
+        "href": "06_Battleship/index.html"
+    },
+    {
+        "title": "TicTacToe",
+        "caption": "",
+        "href": "07_TicTacToe/index.html"
+    },
+    {
+        "title": "Wordle",
+        "caption": "",
+        "href": "08_Wordle/index.html"
+    },
+    {
+        "title": "CurrencyConverter",
+        "caption": "",
+        "href": "10_CurrencyConverter/index.html"
+    },
+    {
+        "title": "NewsExplorer",
+        "caption": "Get daily News Shots",
+        "href": "11_NewsExplorer/index.html"
+    },
+    {
+        "title": "PasswordGenerator",
+        "caption": "Get secure with insane passwords.",
+        "href": "12_PasswordGenerator/index.html"
     }
-
-}
+]
