@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link rel="stylesheet" href="style.css">
-        <title>Title</title>
-    </head>
-    <body>
-        <div class="page">
-            <h1>Title</h1>
-    </body>
-    <script src="script.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<title>Password Genarator</title>
+	</head>
+	<body>
+		<div id="page">
+			<div id="tool">
+				<h1> Password Genarator</h1>
+				<div id="password-container">
+					<div id="password"></div>
+					<button id="copy">Copy Password</button>
+				</div>
+				<span>Length = <span id="length">6</span></span><br><input type="range" id="length-slider" min="6" max="64" value="6"><br>
+				<div id="checklist">
+					<span class="rule"><input type="checkbox" id="number" checked>Numbers</span>
+					<span class="rule"><input type="checkbox" id="letter"  checked>Letters</span>
+					<span class="rule"><input type="checkbox" id="case"  checked>Mixedcase</span>
+					<span class="rule"><input type="checkbox" id="symbol"  checked>Symbol</span>
+					<span class="rule"><input type="checkbox" id="repeat">Repeat</span>
+				</div>
+				<button id="genarate">Genarate Password</button>
+			</div>
+			
+			<div id="info-block">
+				<md-block>
+					### Do you use any of these weak passwords?
+					- Password
+					- 123456
+					- Your child's name
+					- I always use the same password.
+				</md-block>		
+				<md-block>
+					### Why are those passwords weak?
+					- They're easy to guess or crack, Really easy!
+					- If one of your logins is
+					compromised, a hacker then has
+					access to all your services.
+				</md-block>
+			</div>
+		</div>
+	</body>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+	<script src="script.js"></script>
 </html>

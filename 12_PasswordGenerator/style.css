@@ -1,19 +1,113 @@
 *{
-	--clr1: #464646;
-	--clr2: #242424;
+	box-sizing: border-box;
+	border-radius: 1rem;	
 }
 body {
-	justify-items: center;
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
-	background-color: var(--clr1);
-	padding: 1rem 0rem;
-	margin: 0rem;
+	background-image: url("https://images.alphacoders.com/165/165381.jpg");
+	background-color: #88888888;
+	/* display: flex; */
+	padding: 6rem 3rem;
+	margin: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h1 {
-	height: 4rem;
-	font-size: 3rem;
 	text-align: center;
+}
+#page {
+	box-shadow: 0 0 2rem;
+	padding: 4rem 0rem;
+	background-color: #fff0d5e9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#info-block {
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+md-block {
+	display: block;
+	padding: 2rem;
+	width: 32rem;
+	font-size: 1.2rem;
+}
+#tool {
+	width: 90%;
+	max-width: 80rem;
+	padding: 2rem;
+	background-color: rgb(255, 242, 220);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+		box-shadow: inset 0rem 0rem .7rem rgba(102, 56, 0, 0.363);
+}
+#checklist{
+	display: flex;
+	flex-flow: wrap;
 	padding: 1rem;
+	justify-content: center;
+}
+.rule{
+	display: flex;
+	padding: .5rem 1rem;
+}
+#length{
+	left: -2rem;
+}
+#password-container {
+	max-width: 70rem;
+	margin: 2rem 0rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	padding: 1.5rem;
+	position: relative;
+	height: 5rem;
+	border: solid 1px lightgray;
+}
+#password {
+	overflow: hidden;
+	font-size: 1.2rem;
+}
+#copy{
+	border: none;
+	color: azure;
+	background-color: green;
+	position: absolute;
+	font-size: 1.2rem;
+	padding: 1rem 2rem;
+	right: 1rem;
+	font-weight: 600;
+	box-shadow: 0 0 .7rem lightgray;
+	&:hover{
+		box-shadow: none;
+		box-shadow: inset 0rem 0rem .7rem white;
+	}
+}
+#genarate{
+	margin: 1rem;;
+	font-weight: 600;
+	border: none;
+	color: white;
+	background-color: orange;
+	/* position: absolute; */
+	font-size: 1.2rem;
+	padding: 1rem 2rem;
+	right: 1rem;
+	box-shadow: 0 0 .7rem lightgray;
+	&:hover{
+		box-shadow: none;
+		box-shadow: inset 0rem 0rem .7rem white;
+	}
+}
+#length-slider {
+	width: 60%;
+}
+span {
+	font-size: 1.2rem;
+	font-weight: 600;
 }

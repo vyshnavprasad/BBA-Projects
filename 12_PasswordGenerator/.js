@@ -9,23 +9,14 @@ function bp() {
 
 bp();
 
-
-
-
-
-
 /////////////////
 // APPLICATION //
 /////////////////
 
-
-
-
 // VARIABLES
 const upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 const lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-const number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-const symbol = [
+const symbol    = [
     ".",  // Period
     ",",  // Comma
     "!",  // Exclamation mark
@@ -52,9 +43,9 @@ const symbol = [
     "*",  // Asterisk
     "~"   // Tilde
 ];
+const number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
 let password;
-
-
 
 
 // FUNCTIONS
@@ -67,55 +58,9 @@ function Randomizer(string) {
     }
     return(string);
 }
-
 function Selector(array){
     return(Randomizer(array)[Math.floor(array.length*Math.random())]);
 }
-
-function StringGenerator(string, omit, length, repeat){
-    let result = "";
-    // let stringLength = string.length;
-    if(repeat){
-        while(length--){
-            result += Selector(string);
-        }
-    }
-    else{
-        // let parent = string;
-        let parent = omit.split("").filter(x).join("");
-        while(length--){
-            let letter = Selector(parent);
-            parent = parent.replace(letter, "");
-            result += letter;
-        }
-    }
-    return(result);
-}
-
-function StringGenerator(string, omit, length, repeat){
-    let result = "";
-    // let stringLength = string.length;
-    if(repeat){
-        while(length--){
-            result += Selector(string);
-        }
-    }
-    else{
-        // let parent = string;
-        let parent = string.split("").filter(x => !omit.includes(x)).join("");
-        while(length--){
-            let letter = Selector(parent);
-            parent = parent.replace(letter, "");
-            result += letter;
-        }
-    }
-    return(result);
-}
-
-
-
-
-//EVENT FUNCTIONS
 
 function ResetSlider() {
     console.log("triggered")
@@ -134,11 +79,7 @@ function ResetSlider() {
     passwordLength.textContent = lengthSlider.value;
 }
 
-
-
-
 // QUERY SELECTOR
-
 let numberCheck = document.querySelector("#number");
 let letterCheck = document.querySelector("#letter");
 let caseCheck = document.querySelector("#case");
@@ -151,8 +92,6 @@ let copyButton = document.querySelector("#copy");
 let repeatCheck = document.querySelector("#repeat");
 
 
-
-
 // EVENT HANDLERS
 
 copyButton.addEventListener("click", () => {
@@ -162,12 +101,6 @@ copyButton.addEventListener("click", () => {
 lengthSlider.oninput = function () {
     passwordLength.innerText = lengthSlider.value;
 }
-
-caseCheck.addEventListener("click", ResetSlider());
-numberCheck.addEventListener("click", () => ResetSlider());
-letterCheck.addEventListener("click", () => ResetSlider());
-symbolCheck.addEventListener("click", () => ResetSlider());
-repeatCheck.addEventListener("click", () => ResetSlider());
 
 genarateButton.addEventListener("click", () => {
     password = "";
