@@ -22,10 +22,11 @@ let page = document.querySelector("#page");
 //FUNCTIONS
 function ListBuilder(projects) {
     for(let index in projects){
+        let project = projects[index];
+        
         let projectContainer = document.createElement("div");
         projectContainer.classList.add("project-container");
 
-        let project = projects[index];
         let projectElement = document.createElement("a");
         projectElement.href = project.href;
         projectElement.target = "_blank";
