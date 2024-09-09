@@ -34,7 +34,7 @@ h1 {
 	height: 60%;
 	width: 60%;
 	min-width: 50rem;
-	min-height: 60rem;
+	min-height: 40rem;
 	max-width: 70rem;
 	display: flex;
 	flex-direction: column;
