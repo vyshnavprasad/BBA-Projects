@@ -28,6 +28,7 @@ h1 {
 	font-size: 3rem;
 	text-align: center;
 	padding: 2rem;
+	width: 80vw;
 }
 #tool {
 	height: 60%;
@@ -51,7 +52,9 @@ h1 {
 	background-color: var(--clr0);
 }
 .container{
-	width: 32rem;
+	width: 60vw;
+	max-width: 40rem;
+	min-width: 25rem;
 	display: flex;
 	/* flex-direction: column; */
 	justify-items: center;
