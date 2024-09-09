@@ -30,7 +30,7 @@ a {
 
 }
 .board {
-	margin: 3rem;
+	margin: 2rem;
 	border : 1px solid rgb(0, 255, 89);
 	border: solid;
 	color: var(--clr2);
