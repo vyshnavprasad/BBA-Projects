@@ -16,7 +16,7 @@ body {
 }
 h1 {
 	height: 4rem;
-	font-size: 3rem;
+	font-size: 2rem;
 	padding: 0rem;
 	margin: 0rem;
 }
@@ -41,7 +41,7 @@ a {
 	border-radius: 2rem;
 	display: block;
 	width: 50%;
-	min-width: 45rem;
+	min-width: 35rem;
 	max-width: 60rem;
 	&:hover{
 		background-color: var(--clr0);
@@ -54,7 +54,7 @@ a {
 	margin: 6rem;
 	width: 80vw;
 	display: flex;
-	/* flex-direction: row; */
+	flex-direction: row;
 	overflow: hidden;
 	flex-wrap: wrap;
 	justify-content: space-around;
