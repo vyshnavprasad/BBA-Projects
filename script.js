@@ -23,7 +23,7 @@ let page = document.querySelector("#page");
 function ListBuilder(projects) {
     for(let index in projects){
         let project = projects[index];
-        
+
         let projectContainer = document.createElement("div");
         projectContainer.classList.add("project-container");
 
@@ -39,7 +39,7 @@ function ListBuilder(projects) {
         let elementContent = document.createElement("h3");
         elementContent.textContent = project.caption;
         projectElement.append(elementTitle, elementContent);
-        page.append(projectContainer.appendChild(projectElement));    
+        page.append(projectElement);    
     }
     console.log(page);
 }

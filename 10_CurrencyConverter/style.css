@@ -1,19 +1,80 @@
 *{
-	--clr1: #464646;
-	--clr2: #242424;
+	--clr0: #ffffff;
+	--clr1: #ffecd2;
+	--clr2: #335877;
+	--clr3: #243655;
+	border-radius: 1rem;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: .5rem;
+	font-size: 1rem;
+	/* border: solid red 1px; */
+}
+html {
+	margin: 0rem;
 }
 body {
 	justify-items: center;
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
-	background-color: var(--clr1);
-	padding: 1rem 0rem;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--clr3);
 	margin: 0rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 h1 {
-	height: 4rem;
 	font-size: 3rem;
 	text-align: center;
+	padding: 2rem;
+}
+#tool {
+	height: 60%;
+	width: 60%;
+	min-width: 50rem;
+	min-height: 60rem;
+	max-width: 70rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr1);
+}
+#countryOne, #countryTwo {
 	padding: 1rem;
+	width: 6.5rem;
+}
+#countryOneAmount, #countryTwoAmount {
+	padding: 1rem;
+	width: 100%;
+	background-color: var(--clr0);
+}
+.container{
+	width: 32rem;
+	display: flex;
+	/* flex-direction: column; */
+	justify-items: center;
+	align-content: center;
+}
+#equal {
+	font-weight: 800;
+	font-size: 3rem;
+}
+#calculate {
+	border: none;
+	margin: 1rem;
+	font-size: 1.2rem;
+	padding: 1.5rem;
+	background-color: var(--clr3);
+	font-weight: 600;
+	color: var(--clr1);
+	&:hover {
+		background-color: var(--clr2);
+		color: var(--clr0);
+	}
+}
+select {
+	font-size: 1.2rem;
+	/* padding: 1rem; */
 }
